@@ -1,1 +1,1 @@
-# JHopkinsAngularjs
+# JHopkinsAngularjs - assignment 1
