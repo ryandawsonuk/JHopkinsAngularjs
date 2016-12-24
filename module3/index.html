@@ -14,7 +14,7 @@
         <h1>Narrow Down Your Chinese Menu Choice</h1>
 
         <div class="form-group">
-          <input type="text" placeholder="Search term (e.g. chicken)" ng-model="narrowCtrl.searchTerm" class="form-control">
+          <input type="text" placeholder="Search term (e.g. tofu)" ng-model="narrowCtrl.searchTerm" class="form-control">
         </div>
         <div class="form-group narrow-button">
           <button class="btn btn-primary" ng-click="narrowCtrl.getMatchedMenuItems(narrowCtrl.searchTerm)">Narrow It Down For Me!</button>
@@ -24,7 +24,7 @@
       <div class="row">
         <!-- found-items should be implemented as a component -->
         <div ng-if="narrowCtrl.found.length == 0" >Nothing found.</div>
-        <div  ng-if="narrowCtrl.found.length != 0" >
+        <div  ng-if="narrowCtrl.found.length > 0" >
           <found-items items="narrowCtrl.found" on-remove="narrowCtrl.removeItem(index)"></found-items>
         </div>
       </div>

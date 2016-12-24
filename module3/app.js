@@ -24,9 +24,13 @@ NarrowItDownController.$inject = ['MenuSearchService'];
 function NarrowItDownController(MenuSearchService) {
   var menu = this;
   menu.searchTerm = "";
-  menu.found = new Array();
 
   menu.getMatchedMenuItems = function (searchTerm) {
+    if(!searchTerm){ //if no search term then no results
+      menu.found = [];
+      return ;
+    }
+
     var promise = MenuSearchService.getMatchedMenuItems(menu.searchTerm);
     promise.then(function (response) {
         menu.found = response;
@@ -64,9 +68,7 @@ function MenuSearchService($http, ApiBasePath) {
 
   service.checkName = function(searchTerm, found){
     var result = [];
-    if(!searchTerm){ //if no search term then no results
-      return result;
-    }
+
     for (var index = 0; index < found.length; index++) {
       if (found[index].description.indexOf(searchTerm) != -1) {
         result.push(found[index]);
