@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="alert alert-info" ng-if="!userInfoCtrl.registered">
+    <h2>Not Signed Up Yet. <a ui-sref="public.registration">Sign up Now!</a></h2>
+  </div>
+  <div id="userInfoData" class="text-center" ng-if="userInfoCtrl.registered">
+    <h2>Profile</h2>
+    <br/>
+    <p >First name - {{ userInfoCtrl.user.firstname }}</p>
+    <br/>
+    <p >Last name - {{ userInfoCtrl.user.lastname }}</p>
+    <br/>
+    <p >Email - {{ userInfoCtrl.user.email }}</p>
+    <br/>
+    <p >Phone - {{ userInfoCtrl.user.phone }}</p>
+    <br/>
+    <h4 >Favorite menu item - {{ userInfoCtrl.user.menu_item.short_name }}</h4>
+    <p >{{ userInfoCtrl.user.menu_item.name }} - {{ userInfoCtrl.user.menu_item.description }}</p>
+        <img class="img-responsive" width="250" height="150"
+        ng-src="{{ userInfoCtrl.basePath }}/images/{{ userInfoCtrl.user.menu_item.short_name }}.jpg"
+        alt="{{ userInfoCtrl.user.menu_item.name}}" />
+
+  </div>
+</div>
