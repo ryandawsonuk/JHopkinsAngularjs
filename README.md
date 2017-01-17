@@ -10,10 +10,10 @@ This is for the completed assignments for the Coursera Course 'Single Page Web A
 * Week 5 is on validation and testing (unit testing via Jasmine is unassessed optional material).
 
 ##Course projects
-Each week has a peer-reviewed exercise to demonstrate the concepts covered. The folders in this repository contain submissions for those assignments, together with the assignment instructios.
+Each week has a peer-reviewed exercise to demonstrate the concepts covered. The folders in this repository contain submissions for those assignments, together with the assignment instructios (in the README.md files).
 
 The final course project adds Angular to a website that wasn't using a JS framework (just ajax and bootstrap) and angularises all of the direct DOM manipulation code. This is the result - https://ryandawsonuk.github.io/JHopkinsAngularjs/module5/#/
 
 #Note to Coursera Community
 
-I am storing this in source control after completing the course for my own purposes. This is not intended for coursera students. If anyone from Coursera community is uncomfortable with this then I am happy to remove - if so please flag to me under the issues section.
+I am storing this in source control after completing the course for my own purposes. This is not intended to help anyone break any coursera rules. If anyone from Coursera community is uncomfortable with this then I am happy to remove - if so please flag to me under the issues section.
