@@ -12,7 +12,7 @@ This is for the completed assignments for the Coursera Course 'Single Page Web A
 ##Course projects
 Each week has a peer-reviewed exercise to demonstrate the concepts covered. The folders in this repository contain submissions for those assignments, together with the assignment instructios (in the README.md files).
 
-The final course project adds Angular to a website that wasn't using a JS framework (just ajax and bootstrap) and angularises all of the direct DOM manipulation code. This is the result - https://ryandawsonuk.github.io/JHopkinsAngularjs/module5/#/
+The final course project adds Angular to a website that wasn't using a JS framework (just ajax and bootstrap) and angularises all of the direct DOM manipulation code. This is the result - https://ryandawsonuk.github.io/JHopkinsAngularjs/module5-formvalidation/#/
 
 ## Course Completion
 
